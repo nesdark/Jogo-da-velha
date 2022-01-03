@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+  <!-- STYLE -->  
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+  
+  <h2>Tic Tac Toe</h2>
+
+  <div id="winner">Winner: </div>
+
+  <div>
+    <div id="1" class="square" onclick="chooseSquare(this)">-</div>
+    <div id="2" class="square" onclick="chooseSquare(this)">-</div>
+    <div id="3" class="square" onclick="chooseSquare(this)">-</div>
+  </div>
+  <div>
+    <div id="4" class="square" onclick="chooseSquare(this)">-</div>
+    <div id="5" class="square" onclick="chooseSquare(this)">-</div>
+    <div id="6" class="square" onclick="chooseSquare(this)">-</div>
+  </div>
+  <div>
+    <div id="7" class="square" onclick="chooseSquare(this)">-</div>
+    <div id="8" class="square" onclick="chooseSquare(this)">-</div>
+    <div id="9" class="square" onclick="chooseSquare(this)">-</div>
+  </div>
+
+  <div id="turn">
+    <label>
+      Turn:
+    </label>
+    <label id="current-player">
+
+    </label>
+    </div>
+  
+  <div>
+    <button id="reset" onclick="reset()">Reset</button>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
